@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes</title>
+        <style>
+            body {
+                background-color: #f2f2f2;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+            input[type="file"] {
+                padding: 10px;
+                border: none;
+                background-color: #fff;
+                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+                border-radius: 5px;
+            }
+            input[type="submit"] {
+                display: block;
+                margin: 20px auto 0;
+                padding: 10px 20px;
+                border: none;
+                background-color: #333;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Notes upload:</h1>
+        <form method="POST" action="teach.php" enctype="multipart/form-data">
+            <center>
+            <label for="myfile">Select a file to upload:</label>
+            <input type="file" name="myfile" id= "myfile" required><br>
+            <label>Subject name:</label>
+            <input type="text" name="sname" id="sname" required>
+            <input type="submit" name="submit" value="Upload Document">
+            </center>
+        </form>
+    </body>
+</html>
+    
+    

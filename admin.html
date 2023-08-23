@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+	<style>
+		.login-form {
+			width: 300px;
+			margin: auto;
+			margin-top: 50px;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+
+		.login-form h2 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.input-field {
+			position: relative;
+			margin-bottom: 20px;
+		}
+
+		.input-field i {
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			transform: translateY(-50%);
+			font-size: 20px;
+			color: #999;
+		}
+
+		.input-field input[type="text"],
+		.input-field input[type="password"] {
+			width: 75%;
+			padding: 12px;
+			padding-left: 50px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.input-field input[type="text"]:focus,
+		.input-field input[type="password"]:focus {
+			outline: none;
+			border-color: #719ECE;
+			box-shadow: 0 0 5px #719ECE;
+		}
+
+		button[type="submit"] {
+			display: block;
+			width: 100%;
+			padding: 12px;
+			margin-top: 20px;
+			background-color: #317899;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #2d6f8e;
+		}
+	</style>
+	<script>
+        if (window.history && window.history.pushState) {
+            window.history.pushState('', null, './admin.html');
+            window.addEventListener('popstate', function () {
+                window.history.pushState('', null, './admin.html');
+            });
+        }
+    </script>
+</head>
+<body>
+	<form method="POST" action="ad.php">
+		<div class="login-form">
+			<h2>ADMIN LOGIN</h2>
+
+			<div class="input-field">
+				<i class="fas fa-user"></i>
+				<input type="text" id="uname" name="uname" placeholder="username">
+			</div>
+
+			<div class="input-field">
+				<i class="fas fa-lock"></i>
+				<input type="password" id="psw" name="psw" placeholder="password">
+			</div> 
+			
+			<button type="submit" value="Sign In">Sign In</button>    
+		</div>
+	</form>
+</body>
+</html>

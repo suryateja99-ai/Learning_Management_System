@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        h3 {
+            color: #333333;
+        }
+
+        textarea {
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+
+        select, input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+
+        center {
+            margin-top: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="tassi.php">
+    <center>
+        <h3>Post Assignment:</h3>
+        <textarea name="assi" id="assi"></textarea><br><br>
+        <label for="year">Post assignment to:</label>
+        <select name="year" id="year">
+            <option value="1st year" name="year">1st year</option>
+            <option value="2nd year" name="year">2nd year</option>
+            <option value="3rd year" name="year">3rd year</option>
+            <option value="4th year" name="year">4th year</option>
+        </select><br><br>
+        <label>Branch</label>
+        <select name="br" style="margin: 0;
+           padding: 0;"><option value="select" name="br" selected style="margin: 0;
+           padding: 0;">select</option>
+         <option value="CSM" name="br" style="margin: 0;
+         padding: 0;">CSM</option>
+         <option value="CSE" name="br" style="margin: 0;
+         padding: 0;">CSE</option>
+         <option value="CSO" name="br" style="margin: 0;
+         padding: 0;">CSO</option>
+         <option value="CSW" name="br" style="margin: 0;
+         padding: 0;">CSW</option>
+         <option value="CE" name="br" style="margin: 0;
+         padding: 0;">CE</option>
+         <option value="ME" name="br" style="margin: 0;
+         padding: 0;">ME</option>
+         <option value="ECE" name="br" style="margin: 0;
+         padding: 0;">ECE</option></select><br style="margin: 0;
+         padding: 0;"><br style="margin: 0;
+         padding: 0;">    
+        <label for="sub">Subject:</label>
+        <input type="text" id="sub" name="sub">
+        <label for="top">Topic:</label>
+        <input type="text" id="top" name="top"><br><br>
+        <label>Deadline</label>
+        <input type="date" name="dat" id="dat"><br><br>
+        <input type="submit" value="Submit" name="submit">
+    </center>
+    </form>
+</body>
+</html>

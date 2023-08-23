@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Assignments</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    form {
+      margin-top: 50px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .assignment-text {
+      margin-top: 50px;
+      font-size: 20px;
+    }
+    
+    .assignment-image {
+      margin-top: 30px;
+      max-width: 300px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="assignment-text">
+    <p>Assignments allow you to showcase their understanding of the subject matter and apply the concepts learned in class.</p>
+    <p>Stay organized and complete them on time!</p>
+    <p>Click the button below to get your assignments.</p>
+  </div>
+  
+  <img class="assignment-image" src="https://media2.giphy.com/media/SwyZW2d6x3KMlCeE1O/giphy.gif?cid=6c09b952cqdcaf6tc0g7niaix4wbq7b150vct1y1d5tsusyl&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="Assignment Image">
+  
+  <form method="POST" action="sassi.php">
+    <input type="submit" name="submit" value="Click to get assignments">
+  </form>
+</body>
+</html>

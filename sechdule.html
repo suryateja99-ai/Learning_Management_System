@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Schedule Exams</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2;
+            }
+            
+            header {
+                background-color: #3b8fc0;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+            }
+            .previous-button {
+                position: absolute;
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                top: 10px;
+                left: 10px;
+                cursor: pointer;
+                font-size: 16px;
+       }
+            
+            form {
+                margin: 20px;
+                padding: 20px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+            
+            input[type="text"],
+            input[type="date"],
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #4fabd6;
+                border-radius: 5px;
+            }
+            
+            input[type="submit"] {
+                background-color: #3cdb2d;
+                color: #fff;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <a class="previous-button" href="dashboard.html">&lt; Previous</a><br><br><br>
+        <header>Schedule Exams</header>
+        <form method="POST" action="secexam.php">
+            <label>Exam Title</label>
+            <input type="text" name="title" placeholder="Ex:MID EXAM">
+            <label>Subject name</label>
+            <input type="text" name="subject">
+            <label>Set the date</label>
+            <input type="date" name="date">
+            <label>Branch</label>
+            <input type="text" name="branch" placeholder="caps only">
+            <label>Year</label>
+            <input type="text" name="year">
+            <input type="submit" name="submit" value="post">
+        </form>
+    </body>
+</html>

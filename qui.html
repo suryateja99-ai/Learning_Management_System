@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Form</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+    
+    form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #448be7;
+        border: 1px solid #0c0000;
+        border-radius: 5px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    
+    .error {
+        color: red;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }    
+</style>
+<body>
+    <form action="quiz_assignment.php" method="POST">
+        <label for="quizName">Quiz Name:</label>
+        <input type="text" name="quizName" id="quizName" required><br><br>
+
+        <label for="Subject">Subject:</label>
+        <input type="text" name="Subject" id="Subject" required><br><br>
+
+        <label for="question1">Question 1:</label>
+        <input type="text" name="question" id="question1" required><br>
+
+        <label for="answer1_1">Answer :</label>
+        <input type="text" name="answer" id="answer1_1" required><br>
+
+
+        <label for="question2">Question 2:</label>
+        <input type="text" name="question" id="question2" required><br>
+
+        <label for="answer2_1">Answer:</label>
+        <input type="text" name="answer" id="answer2_1" required><br>
+
+        <label for="question2">Question 3:</label>
+        <input type="text" name="question" id="question2" required><br>
+
+        <label for="answer2_1">Answer:</label>
+        <input type="text" name="answer" id="answer2_1" required><br>
+
+        <label for="question2">Question 4:</label>
+        <input type="text" name="question" id="question2" required><br>
+
+        <label for="answer2_1">Answer:</label>
+        <input type="text" name="answer" id="answer2_1" required><br>
+
+        <label for="question2">Question 5:</label>
+        <input type="text" name="question" id="question2" required><br>
+
+        <label for="answer2_1">Answer:</label>
+        <input type="text" name="answer" id="answer2_1" required><br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

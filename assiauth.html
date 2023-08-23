@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generate Unique Code</title>
+        <style>
+            body {
+                background-color: #f2f2f2;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            center {
+                margin-top: 200px;
+            }
+            p {
+                font-size: 18px;
+                color: #333;
+                margin-bottom: 20px;
+            }
+            input[type="submit"] {
+                display: block;
+                margin: 0 auto;
+                padding: 10px 20px;
+                border: none;
+                background-color: #333;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            input[type="submit"]:hover {
+                background-color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="asiauth.php">
+            <center>
+                <p>You need to generate a unique code before submitting.</p>
+                <input type="submit" name="submit" value="Get Code">
+            </center>
+        </form>
+    </body>
+</html>

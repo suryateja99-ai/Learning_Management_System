@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .row {
+      display: flex;
+    }
+    
+    .row label,
+    .row input[type="text"] {
+      flex: 1;
+      padding: 5px;
+    }
+    
+    .row label {
+      font-weight: bold;
+    }
+    .previous-button {
+           position: absolute;
+           background-color: #4CAF50;
+           color: white;
+           padding: 10px 20px;
+           border: none;
+           border-radius: 4px;
+           top: 10px;
+           left: 10px;
+           cursor: pointer;
+           font-size: 16px;
+    }
+    
+    input[type="submit"] {
+      margin-top: 10px;
+    }
+    
+    /* Optional: Add some spacing between cells */
+    .row label,
+    .row input[type="text"] {
+      border: 1px solid #ccc;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <a class="previous-button" href="dashboard.html">&lt; Previous</a><br><br><br>
+  <form method="POST" action="storett.php">
+    <div class="row">
+      <label for="branch">Branch:</label>
+      <input type="text" name="branch" id="branch">
+    </div>
+    <div class="row">
+      <label for="year">Year:</label>
+      <input type="text" name="year" id="year">
+    </div>
+    <div class="row">
+      <label></label>
+      <label for="Monday">Monday</label>
+      <label for="Tuesday">Tuesday</label>
+      <label for="Wednesday">Wednesday</label>
+      <label for="Thursday">Thursday</label>
+      <label for="Friday">Friday</label>
+      <label for="Saturday">Saturday</label>
+    </div>
+    <div class="row">
+      <label for="time1">9:30 - 10:20:</label>
+      <input type="text" name="Monday[]" id="Monday1">
+      <input type="text" name="Tuesday[]" id="Tuesday1">
+      <input type="text" name="Wednesday[]" id="Wednesday1">
+      <input type="text" name="Thursday[]" id="Thursday1">
+      <input type="text" name="Friday[]" id="Friday1">
+      <input type="text" name="Saturday[]" id="Saturday1">
+    </div>
+    <div class="row">
+      <label for="time2">10:20 - 11:10:</label>
+      <input type="text" name="Monday[]" id="Monday2">
+      <input type="text" name="Tuesday[]" id="Tuesday2">
+      <input type="text" name="Wednesday[]" id="Wednesday2">
+      <input type="text" name="Thursday[]" id="Thursday2">
+      <input type="text" name="Friday[]" id="Friday2">
+      <input type="text" name="Saturday[]" id="Saturday2">
+    </div>
+    <div class="row">
+      <label for="time3">11:20 - 12:10:</label>
+      <input type="text" name="Monday[]" id="Monday3">
+      <input type="text" name="Tuesday[]" id="Tuesday3">
+      <input type="text" name="Wednesday[]" id="Wednesday3">
+      <input type="text" name="Thursday[]" id="Thursday3">
+      <input type="text" name="Friday[]" id="Friday3">
+      <input type="text" name="Saturday[]" id="Saturday3">
+    </div>
+    <div class="row">
+      <label for="time4">12:10 - 1:00 PM:</label>
+      <input type="text" name="Monday[]" id="Monday4">
+      <input type="text" name="Tuesday[]" id="Tuesday4">
+      <input type="text" name="Wednesday[]" id="Wednesday4">
+      <input type="text" name="Thursday[]" id="Thursday4">
+      <input type="text" name="Friday[]" id="Friday4">
+      <input type="text" name="Saturday[]" id="Saturday4">
+    </div>
+    <div class="row">
+      <label for="time5">1:00 - 1:40 PM:</label>
+      <input type="text" name="Monday[]" id="Monday5">
+      <input type="text" name="Tuesday[]" id="Tuesday5">
+      <input type="text" name="Wednesday[]" id="Wednesday5">
+      <input type="text" name="Thursday[]" id="Thursday5">
+      <input type="text" name="Friday[]" id="Friday5">
+      <input type="text" name="Saturday[]" id="Saturday5">
+    </div>
+    <div class="row">
+      <label for="time6">1:40 - 2:30 PM:</label>
+      <input type="text" name="Monday[]" id="Monday6">
+      <input type="text" name="Tuesday[]" id="Tuesday6">
+      <input type="text" name="Wednesday[]" id="Wednesday6">
+      <input type="text" name="Thursday[]" id="Thursday6">
+      <input type="text" name="Friday[]" id="Friday6">
+      <input type="text" name="Saturday[]" id="Saturday6">
+    </div>
+    <div class="row">
+      <label for="time7">2:30 - 3:20 PM:</label>
+      <input type="text" name="Monday[]" id="Monday7">
+      <input type="text" name="Tuesday[]" id="Tuesday7">
+      <input type="text" name="Wednesday[]" id="Wednesday7">
+      <input type="text" name="Thursday[]" id="Thursday7">
+      <input type="text" name="Friday[]" id="Friday7">
+      <input type="text" name="Saturday[]" id="Saturday7">
+    </div>
+    <div class="row">
+      <label for="time8">3:20 - 4:10 PM:</label>
+      <input type="text" name="Monday[]" id="Monday8">
+      <input type="text" name="Tuesday[]" id="Tuesday8">
+      <input type="text" name="Wednesday[]" id="Wednesday8">
+      <input type="text" name="Thursday[]" id="Thursday8">
+      <input type="text" name="Friday[]" id="Friday8">
+      <input type="text" name="Saturday[]" id="Saturday8">
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

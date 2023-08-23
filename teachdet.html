@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Instructor Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .previous-button {
+           position: absolute;
+           background-color: #4CAF50;
+           color: white;
+           padding: 10px 20px;
+           border: none;
+           border-radius: 4px;
+           top: 10px;
+           left: 10px;
+           cursor: pointer;
+           font-size: 16px;
+       }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #7b9af0;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        h4 {
+            margin: 10px 0;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #4c55d8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Instructor Details</header>
+    <a class="previous-button" href="dashboard.html">&lt; Previous</a><br><br><br>
+    <form method="POST" action="teachde.php">
+        <label>Search by Subject</label>
+        <input type="text" name="sub" id="ht">
+        <center>
+            <h4>OR</h4>
+        </center>
+        <label>Search by Mobile</label>
+        <input type="text" name="mob" id="ht">
+        <center>
+            <h4>OR</h4>
+        </center>
+        <label>Search by Email</label>
+        <input type="text" name="email" id="email">
+        <center>
+            <h4>OR</h4>
+        </center>
+        <label>Search by Name</label>
+        <input type="text" name="name" id="name">
+        <input type="submit" value="Search">
+        <p>To Add or Remove Instructor</p><a href="addremt.html">click here</a>
+    </form>
+</body>
+
+</html>

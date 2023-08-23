@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Side Navigation Bar</title>
+    <style>
+      /* Style the body */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Style the side navigation bar */
+      .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #555;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      /* Style the options */
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #f1f1f1;
+        display: block;
+      }
+
+      /* Style the options when hovered */
+      .sidenav a:hover {
+        color: #fff;
+        background-color: #333;
+      }
+
+      /* Style the main content */
+      .main {
+        margin-left: 200px; /* Same as the width of the side navigation bar */
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidenav">
+      <a href="#">Option 1</a>
+      <a href="#">Option 2</a>
+      <a href="#">Option 3</div>
